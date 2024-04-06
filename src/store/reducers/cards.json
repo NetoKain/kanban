@@ -1,0 +1,125 @@
+{
+    "byId": {
+      "card-1": {
+        "id": "card-1",
+        "parentId": "column-1",
+        "title": "Título do Card 1",
+        "description": "Uma breve explicação do trabalho a ser feito 1.",
+        "assignee": "Pessoa ou equipe responsável pela conclusão do trabalho 1.",
+        "creator": "Pessoa ou equipe responsável pela criação do card 1.",
+        "dueDate": "2024-04-10",
+        "size": "Pequeno",
+        "priority": "Alta",
+        "statusId": 1,
+        "statusDesc": "Solicitação",
+        "labels": ["React", "Teste", "Kanban"],
+        "attachments": [],
+        "comments": [
+          {
+            "body": "Comentário 1",
+            "createdAt": "2024-04-05T21:40:00Z"
+          },
+          {
+            "body": "Comentário 2",
+            "createdAt": "2024-04-05T21:45:00Z"
+          }
+        ],
+        "tags": [
+          {
+            "id": 1,
+            "parentId": "card-1",
+            "name": "React",
+            "borderColor": "#F089BD",
+            "backgroundColor": "#B85C8A",
+            "fontColor": "#fff"
+          },
+          {
+            "id": 2,
+            "parentId": "card-1",
+            "name": "Teste",
+            "borderColor": "#F089BD",
+            "backgroundColor": "#B85C8A",
+            "fontColor": "#fff"
+          },
+          {
+            "id": 3,
+            "parentId": "card-1",
+            "name": "Kanban",
+            "borderColor": "#F089BD",
+            "backgroundColor": "#B85C8A",
+            "fontColor": "#fff"
+          }
+        ]
+      },
+      "card-2": {
+        "id": "card-2",
+        "parentId": "column-2",
+        "title": "Título do Card 2",
+        "description": "Uma breve explicação do trabalho a ser feito 2.",
+        "assignee": "Pessoa ou equipe responsável pela conclusão do trabalho 2.",
+        "creator": "Pessoa ou equipe responsável pela criação do card 2.",
+        "dueDate": "2024-04-11",
+        "size": "Médio",
+        "priority": "Média",
+        "statusId": 2,
+        "statusDesc": "Em Andamento",
+        "labels": ["React", "Teste"],
+        "attachments": [],
+        "comments": [],
+        "tags": []
+      },
+      "card-3": {
+        "id": "card-3",
+        "parentId": "column-1",
+        "title": "Título do Card 3",
+        "description": "Uma breve explicação do trabalho a ser feito 3.",
+        "assignee": "Pessoa ou equipe responsável pela conclusão do trabalho 3.",
+        "creator": "Pessoa ou equipe responsável pela criação do card 3.",
+        "dueDate": "2024-04-12",
+        "size": "Grande",
+        "priority": "Baixa",
+        "statusId": 1,
+        "statusDesc": "Solicitação",
+        "labels": ["Kanban"],
+        "attachments": [],
+        "comments": [],
+        "tags": []
+      },
+      "card-4": {
+        "id": "card-4",
+        "parentId": "column-2",
+        "title": "Título do Card 4",
+        "description": "Uma breve explicação do trabalho a ser feito 4.",
+        "assignee": "Pessoa ou equipe responsável pela conclusão do trabalho 4.",
+        "creator": "Pessoa ou equipe responsável pela criação do card 4.",
+        "dueDate": "2024-04-13",
+        "size": "Pequeno",
+        "priority": "Alta",
+        "statusId": 2,
+        "statusDesc": "Em Andamento",
+        "labels": [],
+        "attachments": [],
+        "comments": [],
+        "tags": []
+      },
+      "card-5": {
+        "id": "card-5",
+        "parentId": "column-3",
+        "title": "Título do Card 5",
+        "description": "Uma breve explicação do trabalho a ser feito 5.",
+        "assignee": "Pessoa ou equipe responsável pela conclusão do trabalho 5.",
+        "creator": "Pessoa ou equipe responsável pela criação do card 5.",
+        "dueDate": "2024-04-14",
+        "size": "Médio",
+        "priority": "Baixa",
+        "statusId": 3,
+        "statusDesc": "Finalizado",
+        "labels": ["Teste"],
+        "attachments": [],
+        "comments": [],
+        "tags": []
+      }
+    },
+    "allIds": ["card-1", "card-2", "card-3", "card-4", "card-5"]
+  }
+  

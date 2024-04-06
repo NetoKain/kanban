@@ -1,0 +1,202 @@
+//Board - exemplo:
+{
+    "id": 1,
+    "title": "Board de Testes",
+    "description": "Board criado para testar as funcionalidades do kanban"
+},
+
+//Columns - exemplo:
+[
+    {
+        "id": 1,
+        "title": "To Do",
+        "statusId": 1, 
+        "statusDesc": "Solicitação",
+        "description": "Atividades pendentes.",
+        "isPrivate": "N",
+        "color": "#0d3b66",
+        "users": []
+    },
+    {
+        "id": 2,
+        "title": "Work in Progress",
+        "statusId": 2, 
+        "statusDesc": "Em Andamento",
+        "description": "Atividades em andamento.",
+        "isPrivate": "N",
+        "color": "#ee964b",
+        "users": []
+    },
+    {
+        "id": 3,
+        "title": "Done",
+        "statusId": 3, 
+        "statusDesc": "Finalizado",
+        "description": "Atividades finalizadas.",
+        "isPrivate": "N",
+        "color": "#887880",
+        "users": []
+    },
+    {
+        "id": 4,
+        "title": "Priority",
+        "statusId": 2, 
+        "statusDesc": "Em Andamento",
+        "description": "Atividades em prioridade.",
+        "isPrivate": "Y",
+        "users": [
+            {
+                "userId": "ID123456"
+            },
+            {
+                "userId": "ID654321"
+            },
+        ]
+    },
+    {
+        "id": 6,
+        "parentId": 5,
+        "title": "Level 1",
+        "statusId": 5, 
+        "statusDesc": "Priorizado",
+        "description": "Atividades em prioridade nivel 1.",
+        "isPrivate": "Y",
+        "users": [
+            {
+                "userId": "ID123456"
+            },
+            {
+                "userId": "ID654321"
+            },
+        ]
+    },
+    {
+        "id": 7,
+        "parentId": 5,
+        "title": "Level 2",
+        "statusId": 5, 
+        "statusDesc": "Priorizado",
+        "description": "Atividades em prioridade nivel 2.",
+        "isPrivate": "Y",
+        "users": [
+            {
+                "userId": "ID123456"
+            },
+            {
+                "userId": "ID654321"
+            },
+        ]
+    },
+    {
+        "id": 8,
+        "parentId": 5,
+        "title": "Level 3",
+        "statusId": 5, 
+        "statusDesc": "Priorizado",
+        "description": "Atividades em prioridade nivel 3.",
+        "isPrivate": "Y",
+        "users": [
+            {
+                "userId": "ID123456"
+            },
+            {
+                "userId": "ID654321"
+            },
+        ]
+    },
+],
+
+//Usuários que estão cadastrados no board e suas funções e cargos
+{
+    "boardUsers": [
+        {
+            "boardId": 1,
+            "userId": "ID123456",
+            "name": "Neto Guimarães",
+            "groupId": 1,
+            "groupName": "Administrador",
+            "functions": [
+                {
+                    "action": "create"
+                },
+                {
+                    "action": "update"
+                },
+                {
+                    "action": "delete"
+                },
+                {
+                    "action": "move"
+                }
+            ]
+        },
+        {
+            "userId": "ID654321",
+            "name": "Arthur Reis",
+            "groupId": 2,
+            "groupName": "Stake Holder",
+            "functions": [
+                {
+                    "action": "create"
+                },
+                {
+                    "action": "update"
+                }
+            ]
+        }
+    ]
+}
+
+
+//Cards
+{
+    "id": 1,
+    "parentId": 1, // id da coluna
+    "title": "Título do Card",
+    "description": "Uma breve explicação do trabalho a ser feito.",
+    "assignee": "Pessoa ou equipe responsável pela conclusão do trabalho.",
+    "creator": "Pessoa ou equipe responsável pela criação do card.",
+    "dueDate": "Data limite para a conclusão do trabalho.",
+    "size": "Estimativa do tempo ou da complexidade do trabalho.",
+    "priority": "Importância do trabalho em relação a outros cards.",
+    "statusId": "Id do estágio atual do trabalho, como '1 - Solicitação', '2 - Em andamento', '3 - Concluído'.",
+    "statusDesc": "Estágio atual do trabalho, como 'Solicitação', 'Em andamento' ou 'Concluído'.",
+    "labels": "Palavras-chave que podem ser usadas para categorizar ou filtrar cards.",
+    "attachments": "Arquivos ou links que podem ser relevantes para o trabalho.",
+    "comments": [
+      {
+        "body": "Comentário 1",
+        "createdAt": "2024-04-05T21:40:00Z"
+      },
+      {
+        "body": "Comentário 2",
+        "createdAt": "2024-04-05T21:40:00Z"
+      }
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "parentId": 1, // id do card
+            "name": "React",
+            "borderColor": "#F089BD",
+            "backgroundColor": "#B85C8A",
+            "fontColor": "#fff"
+        },
+        {
+            "id": 2,
+            "parentId": 1, // id do card
+            "name": "Teste",
+            "borderColor": "#F089BD",
+            "backgroundColor": "#B85C8A",
+            "fontColor": "#fff"
+        },
+        {
+            "id": 3,
+            "parentId": 1, // id do card
+            "name": "Kanban",
+            "borderColor": "#F089BD",
+            "backgroundColor": "#B85C8A",
+            "fontColor": "#fff"
+        },
+    ]
+}
