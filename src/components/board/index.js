@@ -1,18 +1,36 @@
 // /components/Board/Board.js
-import React from 'react';
-import { BoardContainer } from './Board.styles';
-// Importação de Column será necessária mais tarde quando o componente for criado
-// import Column from '../Column';
+import React from "react";
+import { useSelector } from "react-redux";
+import Column from "../column";
+import { BoardContainer } from "./styles";
 
+/**
+ * Renders a board with multiple columns.
+ * @param {Object} props - The component props.
+ * @param {Object} props.columns - An object containing the columns data.
+ * @returns {JSX.Element} - The rendered board component.
+ */
 const Board = ({ columns }) => {
+  const cards = useSelector((state) => state.cards.byId);
+
   return (
     <BoardContainer>
-      {columns.map((column, index) => (
-        // O componente Column será definido posteriormente
-        // <Column key={index} title={column.title} cards={column.cards} />
-        // Para este exemplo, vamos apenas usar um placeholder
-        <div key={index}>{column.title}</div>
-      ))}
+      {Object.values(columns).map((column) => {
+        if (!column.parentId) {
+          const { id, cards: columnCards, subcolumns, ...otherProps } = column;
+          const columnCardsData = columnCards?.map((id) => cards[id]);
+
+          return (
+            <Column
+              key={id}
+              {...otherProps}
+              cards={columnCardsData}
+              subcolumns={subcolumns}
+            />
+          );
+        }
+        return null;
+      })}
     </BoardContainer>
   );
 };

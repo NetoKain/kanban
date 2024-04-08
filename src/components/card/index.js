@@ -1,16 +1,42 @@
-import React from 'react';
+import React from "react";
+import {
+  CardContainer,
+  CardHeader,
+  CardTitle,
+  ItemIcon,
+  ItemId,
+  ItemInfo,
+  ItemTags,
+  ItemTitle,
+} from "./styles";
+import Tag from "../tag";
 
-const Card = ({ title, description, assignee, creator, dueDate, size, priority }) => {
+const Card = ({
+  id,
+  title,
+  description,
+  assignee,
+  creator,
+  dueDate,
+  size,
+  priority,
+  tags,
+}) => {
   return (
-    <div>
-      <h3>{title}</h3>
-      <p>Description: {description}</p>
-      <p>Assignee: {assignee}</p>
-      <p>Creator: {creator}</p>
-      <p>Due Date: {dueDate}</p>
-      <p>Size: {size}</p>
-      <p>Priority: {priority}</p>
-    </div>
+    <CardContainer>
+      <ItemTags>
+        {tags?.map((tag) => (
+          <Tag key={tag.id} {...tag} />
+        ))}
+      </ItemTags>
+      <CardHeader>
+        {/* <ItemIcon>Ícone</ItemIcon> */}
+        <ItemId>{id}</ItemId>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <ItemInfo>{assignee}</ItemInfo>
+      <ItemInfo>{creator}</ItemInfo>
+    </CardContainer>
   );
 };
 

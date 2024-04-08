@@ -1,7 +1,6 @@
 import React from "react";
 import {
     BrowserRouter,
-    Link,
     Route,
     Routes,
   } from "react-router-dom";
@@ -12,8 +11,7 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/kanban/*" element={<KanbanPage />} />
+        <Route path="/" element={<KanbanPage />} />
       </Routes>
     </BrowserRouter>
   );

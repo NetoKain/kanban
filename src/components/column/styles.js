@@ -1,21 +1,16 @@
 import { styled } from "styled-components";
 
 export const ColumnContainer = styled.div`
-  height: 800px;
-  width: 200px;
-  contain: content;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #e9e9e9;
-  border-radius: 8px;
+  flex: 1;
+  margin: 0 3px;
+  background: #f4f5f7;
+  border-radius: 3px;
 `;
 
 export const ColumnHeader = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  background: ${(props) => props.color};
-  padding: 0.5rem;
+  padding: 10px;
+  background: #eee;
+  border-radius: 3px 3px 0 0;
 `;
 
 export const ColumnContent = styled.div`

@@ -1,61 +1,63 @@
 {
   "byId": {
-    "column-1": {
-      "id": "column-1",
+    "1": {
+      "id": "1",
       "title": "To Do",
       "statusId": 1,
       "statusDesc": "Solicitação",
-      "cards": ["card-1", "card-3"],
+      "cards": ["1", "3"],
       "color": "#FFD3B6"
     },
-    "column-2": {
-      "id": "column-2",
+    "2": {
+      "id": "2",
       "title": "Work in Progress",
       "statusId": 2,
       "statusDesc": "Em Andamento",
-      "cards": ["card-2", "card-4"],
+      "cards": ["2"],
       "color": "#CFFFE5"
     },
-    "column-3": {
-      "id": "column-3",
+    "3": {
+      "id": "3",
       "title": "Done",
       "statusId": 3,
       "statusDesc": "Finalizado",
-      "cards": ["card-5"],
+      "cards": ["5"],
       "color": "#DAD7FF"
     },
-    "column-4": {
-      "id": "column-4",
+    "4": {
+      "id": "4",
       "title": "Priority",
       "statusId": 2,
       "statusDesc": "Em Andamento",
-      "cards": [],
       "color": "#FFD3B6"
     },
-    "column-5": {
-      "id": "column-5",
+    "5": {
+      "id": "5",
+      "parentId": "4",
       "title": "Level 1",
       "statusId": 5,
       "statusDesc": "Priorizado",
       "cards": [],
       "color": "#CFFFE5"
     },
-    "column-6": {
-      "id": "column-6",
+    "6": {
+      "id": "6",
+      "parentId": "4",
       "title": "Level 2",
       "statusId": 5,
       "statusDesc": "Priorizado",
       "cards": [],
       "color": "#DAD7FF"
     },
-    "column-7": {
-      "id": "column-7",
+    "7": {
+      "id": "7",
+      "parentId": "4",
       "title": "Level 3",
       "statusId": 5,
       "statusDesc": "Priorizado",
-      "cards": [],
+      "cards": ["4"],
       "color": "#FFD3B6"
     }
   },
-  "allIds": ["column-1", "column-2", "column-3", "column-4", "column-5", "column-6", "column-7"]
+  "allIds": ["1", "2", "3", "4", "5", "6", "7"]
 }

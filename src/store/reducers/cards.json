@@ -1,7 +1,7 @@
 {
     "byId": {
-      "card-1": {
-        "id": "card-1",
+      "1": {
+        "id": "1",
         "parentId": "column-1",
         "title": "Título do Card 1",
         "description": "Uma breve explicação do trabalho a ser feito 1.",
@@ -27,7 +27,7 @@
         "tags": [
           {
             "id": 1,
-            "parentId": "card-1",
+            "parentId": "1",
             "name": "React",
             "borderColor": "#F089BD",
             "backgroundColor": "#B85C8A",
@@ -35,7 +35,7 @@
           },
           {
             "id": 2,
-            "parentId": "card-1",
+            "parentId": "1",
             "name": "Teste",
             "borderColor": "#F089BD",
             "backgroundColor": "#B85C8A",
@@ -43,7 +43,7 @@
           },
           {
             "id": 3,
-            "parentId": "card-1",
+            "parentId": "1",
             "name": "Kanban",
             "borderColor": "#F089BD",
             "backgroundColor": "#B85C8A",
@@ -51,8 +51,8 @@
           }
         ]
       },
-      "card-2": {
-        "id": "card-2",
+      "2": {
+        "id": "2",
         "parentId": "column-2",
         "title": "Título do Card 2",
         "description": "Uma breve explicação do trabalho a ser feito 2.",
@@ -68,8 +68,8 @@
         "comments": [],
         "tags": []
       },
-      "card-3": {
-        "id": "card-3",
+      "3": {
+        "id": "3",
         "parentId": "column-1",
         "title": "Título do Card 3",
         "description": "Uma breve explicação do trabalho a ser feito 3.",
@@ -85,8 +85,8 @@
         "comments": [],
         "tags": []
       },
-      "card-4": {
-        "id": "card-4",
+      "4": {
+        "id": "4",
         "parentId": "column-2",
         "title": "Título do Card 4",
         "description": "Uma breve explicação do trabalho a ser feito 4.",
@@ -102,8 +102,8 @@
         "comments": [],
         "tags": []
       },
-      "card-5": {
-        "id": "card-5",
+      "5": {
+        "id": "5",
         "parentId": "column-3",
         "title": "Título do Card 5",
         "description": "Uma breve explicação do trabalho a ser feito 5.",
@@ -120,6 +120,6 @@
         "tags": []
       }
     },
-    "allIds": ["card-1", "card-2", "card-3", "card-4", "card-5"]
+    "allIds": ["1", "2", "3", "4", "5"]
   }
   
